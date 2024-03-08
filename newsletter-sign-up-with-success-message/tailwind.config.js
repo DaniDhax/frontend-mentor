@@ -10,6 +10,12 @@ export default {
         robotoregular: ["RobotoRegular", "sans-serif"],
         robotobold: ["RobotoBold", "sans-serif"],
       },
+      colors: {
+        'tomato': '#FF6257',
+        'dark-slate-grey': '#242742',
+        'charcoal-grey': '#36384E',
+        'grey': '#9294A0',
+      },
     },
   },
   plugins: [],
