@@ -19,7 +19,7 @@ export default {
         'burning-orange': '#FF6A3A',
       },
       boxShadow: {
-        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 1)',
+        'custom': '7px 15px 20px rgba(255, 106, 58, 0.3)',
       }
     },
   },
