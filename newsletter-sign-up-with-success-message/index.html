@@ -6,16 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body class="bg-dark-slate-grey w-screen h-screen sm:flex sm:items-center">
-    <main id="container" class="sm:w-44 sm:h-44 sm:border sm:rounded-2xl sm:mx-auto ">
-      <section id="hero">
-        <!-- <img class="w-full" src="./src/images/illustration-sign-up-mobile.svg" alt="image-mobile"> -->
-        <div style="background-image: url('./src/images/illustration-sign-up-mobile.svg')"></div>
-
+  <body class="sm:bg-dark-slate-grey w-screen h-screen sm:flex sm:items-center font-robotoregular">
+    <main id="container" class="sm:w-2/3 sm:h-2/3 sm:min-w-[700px] sm:max-w-[800px] sm:rounded-2xl sm:mx-auto sm:flex sm:flex-row-reverse sm:bg-white">
+      
+      <section id="hero" class="sm:2/5">
+        <img class=" w-full sm:hidden" src="./src/images/illustration-sign-up-mobile.svg" alt="hero-mobile">
+        <img class=" w-full hidden sm:block h-full p-3 self-end" src="./src/images/illustration-sign-up-desktop.svg" alt="hero-desktop">
       </section>
 
 
-      <section id="description">
+      <section id="description" class="sm:mx-auto sm:my-3 p-5 text-charcoal-grey font-robotoregular text-xs">
+        <p class="text-3xl pb-5 text-dark-slate-grey font-robotobold sm:text-center sm:text-[50px] sm:pt-10">Stay updated!</p>
+        <p class="">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="my-4 flex flex-col gap-3">
+          <li class="w-full flex items-start gap-3">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="w-full flex items-start gap-3">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li class="w-full flex items-start gap-3">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <span>And much more!</span>
+          </li>
+
+          <form action="" class="mt-4 flex flex-col">
+            <label for="txtEmail" class="text-[10px] leading-6 font-robotobold">Email address</label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="email@company.com" class="border border-grey border-opacity-50 h-10 rounded-md pl-4 placeholder-grey focus:text-charcoal-grey focus:font-semibold  focus:border-charcoal-grey focus:outline-none">
+            
+            <div class="shadow-3xl">
+              <button id="" class="h-10 rounded-md bg-charcoal-grey text-white mt-4 font-robotobold hover:bg-gradient-to-r from-wild-watermelon to-burning-orange focus:shadow-3xl">Suscribe to monthly newsletter</button>
+
+            </div>
+          </form>
+
+        </ul>
+
 
 
       </section>
