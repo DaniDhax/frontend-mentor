@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,47 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body class="sm:bg-dark-slate-grey w-screen h-screen sm:flex sm:items-center font-robotoregular">
-    <main id="container" class="sm:w-2/3 sm:min-w-[700px] sm:max-w-[800px] sm:max-h-[500px] sm:rounded-2xl sm:mx-auto sm:flex sm:flex-row-reverse sm:bg-white">
-      
-      <section id="hero">
-        <img class=" w-full sm:hidden" src="./src/images/illustration-sign-up-mobile.svg" alt="hero-mobile">
-        <img class="w-full hidden sm:block h-full p-3 self-end" src="./src/images/illustration-sign-up-desktop.svg" alt="hero-desktop">
+  <body class="bg-dark-slate-grey w-screen h-screen sm:flex sm:items-center font-robotoregular">
+    <main id="container" class="sm:w-2/3 sm:min-w-[700px] sm:max-w-[800px] sm:max-h-[500px] sm:rounded-2xl sm:mx-auto sm:flex sm:flex-row-reverse sm:bg-white hidden sm:hidden">
+      <section id="hero" class="bg-white">
+        <img class="w-full sm:hidden" src="./src/images/illustration-sign-up-mobile.svg" alt="hero-mobile" />
+        <img class="w-full hidden sm:block h-full p-3 self-end" src="./src/images/illustration-sign-up-desktop.svg" alt="hero-desktop" />
       </section>
 
-
-      <section id="description" class="sm:mx-auto sm:my-3 p-5 text-charcoal-grey font-robotoregular text-xs">
+      <section id="description" class="sm:mx-auto sm:my-3 p-5 bg-white text-charcoal-grey font-robotoregular text-xs">
         <p class="text-3xl pb-5 text-dark-slate-grey font-robotobold sm:text-center sm:text-[45px] sm:pt-10">Stay updated!</p>
         <p class="">Join 60,000+ product managers receiving monthly updates on:</p>
         <ul class="my-4 flex flex-col gap-3">
           <li class="w-full flex items-start gap-3">
-            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list" />
             <span>Product discovery and building what matters</span>
           </li>
           <li class="w-full flex items-start gap-3">
-            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list" />
             <span>Measuring to ensure updates are a success</span>
           </li>
           <li class="w-full flex items-start gap-3">
-            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list">
+            <img class="w-4" src="./src/images/icon-list.svg" alt="icon-list" />
             <span>And much more!</span>
           </li>
 
           <form action="" class="mt-4 flex flex-col">
             <label for="txtEmail" class="text-[10px] leading-6 font-robotobold">Email address</label>
-            <input type="email" name="txtEmail" id="txtEmail" placeholder="email@company.com" class="border border-grey border-opacity-50 h-10 rounded-md pl-4 placeholder-grey focus:text-charcoal-grey focus:font-semibold  focus:border-charcoal-grey focus:outline-none">
-            
-            <button class="h-10 rounded-md bg-charcoal-grey text-white my-4 font-robotobold w-full flex justify-center items-center hover:bg-gradient-to-r from-wild-watermelon to-burning-orange hover:shadow-custom ">Suscribe to monthly newsletter
+            <input
+              type="email"
+              name="txtEmail"
+              id="txtEmail"
+              placeholder="email@company.com"
+              class="border border-grey border-opacity-50 h-10 rounded-md pl-4 placeholder-grey focus:text-charcoal-grey focus:font-semibold focus:border-charcoal-grey focus:outline-none"
+            />
 
+            <button
+              class="h-10 rounded-md bg-charcoal-grey text-white my-4 font-robotobold w-full flex justify-center items-center hover:bg-gradient-to-r from-wild-watermelon to-burning-orange hover:shadow-custom"
+            >
+              Suscribe to monthly newsletter
             </button>
           </form>
-
         </ul>
-
-
-
       </section>
     </main>
+
+    <div id="popup-success" class="w-screen h-screen bg-white sm:bg-dark-slate-grey flex flex-col sm:w-80 sm:mx-auto sm:h-5/6">
+
+        <section class="h-full mt-28 sm:m-0 bg-white p-5 sm:p-8 flex flex-col gap-5 sm:rounded-xl">
+          <img class="w-10" src="./src/images/icon-success.svg" alt="icon-mobile-success" />
+          <p class="text-3xl font-robotobold text-charcoal-grey">Thanks for suscribing!</p>
+          <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription</p>
+        </section>
+        <button>hihihh</button>
+        <!-- <button
+          class="h-10 rounded-md bg-charcoal-grey text-white w-[95%] mx-auto mb-6 p-6 sm:mb-0 font-robotobold sm:w-full flex justify-center items-center hover:bg-gradient-to-r from-wild-watermelon to-burning-orange hover:shadow-custom"
+        >
+          Dismiss message
+        </button> -->
+
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
